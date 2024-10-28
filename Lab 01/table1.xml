@@ -1,0 +1,30 @@
+<table-1>
+
+  <product id="11">
+    
+    <name>Samsumg</name>
+    <unit-price>35000</unit-price>
+    <stock>50</stock>
+    <status>1</status>
+  </product>
+
+  <product id="20">
+    
+    <name>HTC</name>
+    <unit-price>65300</unit-price>
+    <stock>35</stock>
+    <status>0</status>
+  </product>
+
+  <product id="23">
+    
+    <name>Nokia</name>
+    <unit-price>25100</unit-price>
+    <stock>100</stock>
+    <status>1</status>
+  </product>
+  
+</table-1>
+
+
+
