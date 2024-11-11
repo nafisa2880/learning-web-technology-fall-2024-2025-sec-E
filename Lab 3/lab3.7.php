@@ -1,28 +1,33 @@
 <?php
 
+echo "<table border='1' cellpadding='5' cellspacing='0'>";
 
-stars = ['*', '* *', '* * *']
-for row in stars:
-    print(row)
-
-print() 
-
-numbers = []
-num = 1
-for i in range(1, 4):
-    row = []
-    for j in range(i):
-        row.append(num)
-        num += 1
-    numbers.append(row)
-    for row in numbers:
-    
+for ($i = 1; $i <= 3; $i++) {
+    echo "<tr>";  
     
 
+    echo "<td>";
+    for ($j = 1; $j <= $i; $j++) {
+        echo "*";
+    }
+    echo "</td>";
+ 
+    echo "<td>";
+    for ($j = 1; $j <= (4 - $i); $j++) {
+        echo $j;
+    }
+    echo "</td>";
 
+    echo "<td>";
+    $letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';  
+    for ($j = 0; $j < $i; $j++) {
+        echo $letters[$j];
+    }
+    echo "</td>";
+ 
+    echo "</tr>"; 
+}
+ 
 
-
-
-
-
+echo "</table>";
 ?>
