@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	
 	<title>Email validation</title>
 </head>
 <body>
-	<form method="POST" action="email.php">
+	<form method="post" action="email.php">
 	Email: 
-	<p><input type="Email" value=""></p>
-	<p><input type="submit"></p>
+	   <input type="text" id="email" name="email"><br>
+       <span style="color: red;" id="emailError"></span><br><br>
+	   <input type="submit" value="Submit">
 	</form>
 	
 </body>
