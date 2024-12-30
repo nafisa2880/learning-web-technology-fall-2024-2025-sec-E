@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Medication Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Set Medication Reminder</h2>
+        <form action="medication.php" method="POST">
+            <label for="medication-name">Medication Name:</label>
+            <input type="text" id="medication-name" name="medication_name" required>
+
+            <label for="dosage">Dosage (e.g., 1 tablet):</label>
+            <input type="text" id="dosage" name="dosage" required>
+
+            <label for="reminder-time">Reminder Time:</label>
+            <input type="time" id="reminder-time" name="reminder_time" required>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start_date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end_date" required>
+
+            <button type="submit">Set Reminder</button>
+        </form>
+    </div>
+</body>
+</html>
